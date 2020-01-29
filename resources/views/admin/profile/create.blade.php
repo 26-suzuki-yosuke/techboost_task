@@ -31,29 +31,29 @@
                             <div class="form-group row">
                                 <label class="col-md-2">氏名</label>
                                 <div class="col-md-10">
-                                    <input type="text" class="form-control" name="title" value="{{ old('name') }}">
+                                    <input type="text" class="form-control" name="name" value="{{ old('name') }}">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-md-2">性別</label>
                                 <div class="col-md-10">
-                                    <select name="title">
-                                        <option value="{{ old('gender') }}" selected>選択してください</option>
-                                        <option value="{{ old('gender') }}">男</option>
-                                        <option value="{{ old('gender') }}">女</option>
+                                    <select class="form-control" name="gender" value="{{ old('gender') }}">
+                                        <option selected>選択してください</option>
+                                        <option>男</option>
+                                        <option>女</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-md-2">趣味</label>
                                 <div class="col-md-10">
-                                    <input type="text" class="form-control" name="title" value="{{ old('hobby') }}">
+                                    <input type="text" class="form-control" name="hobby" value="{{ old('hobby') }}">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-md-2">自己紹介欄</label>
                                 <div class="col-md-10">
-                                    <textarea class="form-control" name="body" rows="20">{{ old('introduction') }}</textarea>
+                                    <textarea class="form-control" name="introduction" rows="10">{{ old('introduction') }}</textarea>
                                 </div>
                             </div>
                             {{ csrf_field() }}
